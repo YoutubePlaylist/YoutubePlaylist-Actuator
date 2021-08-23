@@ -1,0 +1,17 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      base-path: "/monitoring"
+
+  endpoint:
+    health:
+      group:
+        custom:
+          include: "*"
+          show-components: always
+          show-details: always
+
+server:
+  port: 8090
